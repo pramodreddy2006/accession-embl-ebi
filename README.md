@@ -22,7 +22,7 @@ A00000, A0001, ABCDEFG1, DRR2110012, ERR000111-ERR000113, ERR000115-ERR000116, E
 
 ### How do I get set up? ###
 
-* Maven commands
+* Maven commands  
 cd path-to-accession-embl-ebi  
 mvn clean install  
 
