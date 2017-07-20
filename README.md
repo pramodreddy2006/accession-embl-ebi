@@ -23,38 +23,38 @@ A00000, A0001, ABCDEFG1, DRR2110012, ERR000111-ERR000113, ERR000115-ERR000116, E
 ### How do I get set up? ###
 
 * Maven commands
-cd path-to-accession-embl-ebi
-mvn clean install
+cd path-to-accession-embl-ebi  
+mvn clean install  
 
 
 ### Command line ###
-cd path-to-accession-embl-ebi/target
-java -jar  accession.jar
-A0001, A0002
+cd path-to-accession-embl-ebi/target  
+java -jar  accession.jar  
+A0001, A0002  
 
-A0001-A0002
+A0001-A0002  
 
 
 ### WEB REST API ###
-cd path-to-accession-embl-ebi/target
-java -jar  accession-rest.jar
+cd path-to-accession-embl-ebi/target  
+java -jar  accession-rest.jar  
 
 
-POST http://localhost:8080/accession HTTP/1.1
-Accept: application/json
-Content-Type: application/json
+POST http://localhost:8080/accession HTTP/1.1  
+Accept: application/json  
+Content-Type: application/json  
 
-A0001, A0002
+A0001, A0002  
 
 Output:
-["A0001-A0002"]
+["A0001-A0002"]  
 
 
-POST http://localhost:8080/accession/array HTTP/1.1
-Accept: application/json
-Content-Type: application/json
+POST http://localhost:8080/accession/array HTTP/1.1  
+Accept: application/json  
+Content-Type: application/json  
 
-["A0001", "A0002"]
+["A0001", "A0002"]  
 
 Output:
 ["A0001-A0002"]
